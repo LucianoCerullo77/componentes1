@@ -1,10 +1,13 @@
+import NavbarCss from "./styles/NavbarStyle/style.css"
+import indexCss from "./styles/Index/index.css"
+import Navbar from "./components/Navbar/Navbar"; 
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      <h1>Gym Gang of Tokyo</h1>
-      </header>
+        <Navbar/>
     </div>
   );
 }
