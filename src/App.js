@@ -1,13 +1,15 @@
-import NavbarCss from "./styles/NavbarStyle/style.css"
-import indexCss from "./styles/Index/index.css"
-import Navbar from "./components/Navbar/Navbar"; 
-
-
+import Navbar from "./components/Navbar/Navbar";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 
 function App() {
   return (
+    const products = "Product List"
+    const productsCounter = "Total Counter = 1"
+
     <div className="App">
         <Navbar/>
+        <ItemListContainer greeting="Example text" products= {products} productsCounter={productsCounter}/>
     </div>
   );
 }
