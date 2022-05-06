@@ -2,21 +2,27 @@ import CartWidget from "../CartWidget/CartWidget"
 import { Navbar, Container, Nav } from 'react-bootstrap'
 
 
+
 const Header = () => {
+  const  counter = 3
     return(
       <Navbar bg="light" expand="lg">
-  <Container>
-    <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-    <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className="me-auto">
-        <Nav.Link href="#home">Home</Nav.Link>
-        <Nav.Link href="#link">Link</Nav.Link>
-      </Nav>
-    </Navbar.Collapse>
-    <CartWidget/>
-  </Container>
-</Navbar>
+        <Container>
+          <Navbar.Brand href="#home">
+            
+            Gym Gang of Tokyo</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link href="#home">Home</Nav.Link>
+              <Nav.Link href="#shop">Shop</Nav.Link>
+              <Nav.Link href="#aboutUs">About Us</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+          <CartWidget/>
+          <span className="badge bg-danger">{counter}</span>
+        </Container>
+      </Navbar>
     )
 }
 
