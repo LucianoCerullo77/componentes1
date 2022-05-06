@@ -1,7 +1,8 @@
 import CartWidget from "../CartWidget/CartWidget"
-import Navbar from 'react-bootstrap/Navbar'
+import { Navbar, Container, Nav } from 'react-bootstrap'
 
-const Navbar = () => {
+
+const Header = () => {
     return(
       <Navbar bg="light" expand="lg">
   <Container>
@@ -19,4 +20,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default Header

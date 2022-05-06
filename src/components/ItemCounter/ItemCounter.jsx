@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ItemCounter ({productsCounter}) => {
+function ItemCounter ({productsCounter}) {
   return (
     <div>
         <p>{productsCounter}</p>
